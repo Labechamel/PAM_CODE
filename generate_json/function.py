@@ -1,8 +1,10 @@
+import os
+import sys
 # ------------------- function -------------------
 
 def generate_list_from_txt():
     # open file
-    with open(r'C:\Users\bechu\OneDrive - Grenoble Ecole de Management\1 - ECAM\04 - ECAM 5\07 - PAM\2021\Code Sprint5 - 2021\generate_json\generate_name\list_name.txt', 'r') as f:
+    with open(os.path.join(sys.path[0],"generate_name\list_name.txt"), 'r') as f:
         # read file and save data to a list
         data = f.readlines()
         # create a dictionary
@@ -17,6 +19,6 @@ def generate_list_from_txt():
 
 # save result to a txt file
 def save():
-    with open(r'C:\Users\bechu\OneDrive - Grenoble Ecole de Management\1 - ECAM\04 - ECAM 5\07 - PAM\2021\Code Sprint5 - 2021\generate_json\generate_name\generationdict_name.txt', 'w') as f:
+    with open(os.path.join(sys.path[0],"generate_name\generationdict_name.txt"), 'w') as f:
         # write result to file
         f.write(str(generate_list_from_txt()))
