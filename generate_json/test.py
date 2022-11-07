@@ -33,9 +33,6 @@ def pretty_json(file):
             json.dump(data, f, indent=4)
 
 
-
-
-
 # ------------------- main -------------------
 generate_json()
 pretty_json('generate_json/data.json')
@@ -46,3 +43,7 @@ with open('generate_json/data.json', 'r') as f:
     data = json.load(f)
     for i in data:
         print(i['name'])
+    
+    
+    ### test pour bechu xppppppp
+    
