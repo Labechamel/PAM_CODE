@@ -46,3 +46,5 @@ with open('generate_json/data.json', 'r') as f:
     data = json.load(f)
     for i in data:
         print(i['name'])
+
+#testttttt koko pour bechamel
