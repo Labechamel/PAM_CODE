@@ -13,12 +13,12 @@ def generate_csv():
     # open file
     with open('generate_csv/generation_csv_data.csv', 'w') as f:
         # write header to file
-        f.write('id, name, country, age')
+        f.write('id, name, country, age, salaire')
         # loop for each line in data list in a new line
         for i in range(10):
             f.write('\n')
             # write id, random choice in list names, country_names and a random age beetwen 18 and 65
-            f.write(f'{i}, {choice(name)}, {choice(country_names)}, {randint(18, 65)}')
+            f.write(f'{i}, {choice(name)}, {choice(country_names)}, {randint(18, 65)}, {uniform(1000, 10000)}')
         
 
 

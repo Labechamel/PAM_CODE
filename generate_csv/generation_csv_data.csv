@@ -1,101 +1,11 @@
-id, name, country, age
-0, Navada, Indonesia, 63
-1, Sherr, Austria, 54
-2, Schilling, Vietnam, 53
-3, Also, Croatia, 45
-4, Rowland, Malaysia, 60
-5, Jaine, South Korea, 25
-6, Kutchins, Czech Republic, 47
-7, Tadeo, Slovenia, 51
-8, Thanos, Japan, 18
-9, Lennard, South Korea, 20
-10, Zennas, North Korea, 38
-11, Haggerty, Kazakhstan, 20
-12, Demb, Turkey, 57
-13, Cob, Qatar, 34
-14, Twyla, Belarus, 36
-15, Merill, Myanmar, 56
-16, Hutson, Italy, 19
-17, Megen, Hungary, 42
-18, Weig, New Zealand, 58
-19, McCormac, Romania, 51
-20, Isleana, Cambodia, 38
-21, Boak, Luxembourg, 53
-22, Quickman, Austria, 59
-23, Bjork, Netherlands, 57
-24, Sidras, Serbia, 32
-25, Leandra, Poland, 63
-26, Nickolas, Qatar, 58
-27, Lole, Iran, 54
-28, Eliades, India, 46
-29, Antonia, Spain, 47
-30, Fiorenza, Afghanistan, 63
-31, Norrie, Malaysia, 61
-32, Squires, Cambodia, 21
-33, Volkan, Austria, 27
-34, Fem, Philippines, 34
-35, Whelan, Italy, 38
-36, Danzig, Pakistan, 39
-37, Baerman, Belgium, 56
-38, Crescentia, Turkey, 55
-39, Irvin, Iran, 60
-40, Tawney, Pakistan, 18
-41, Williams, Netherlands, 30
-42, Fabrin, Albania, 37
-43, Durkee, France, 48
-44, Aniakudo, Hungary, 24
-45, Nickles, Pakistan, 63
-46, Pritchett, Laos, 38
-47, Darlleen, Austria, 47
-48, Vanderhoek, Luxembourg, 37
-49, Polinski, Macedonia, 19
-50, Dinesh, Netherlands, 63
-51, Fanestil, Montenegro, 23
-52, Laris, United Arab Emirates, 64
-53, Olney, Macedonia, 65
-54, Dorothea, Laos, 28
-55, Bounds, Spain, 31
-56, Amice, Iraq, 56
-57, Twyla, New Zealand, 38
-58, Riplex, Czech Republic, 38
-59, Codee, Luxembourg, 26
-60, Haff, Myanmar, 39
-61, Orelle, Portugal, 36
-62, Saville, Switzerland, 27
-63, Ryder, Brunei, 51
-64, Blondie, Philippines, 38
-65, Randene, Philippines, 22
-66, Meg, Malaysia, 58
-67, Brieta, Austria, 51
-68, Richelle, Greece, 50
-69, Christoffer, Switzerland, 36
-70, Flo, Bosnia and Herzegovina, 20
-71, Corine, Moldova, 29
-72, Marcus, Belarus, 28
-73, Bronk, Thailand, 58
-74, Pedro, Qatar, 58
-75, Landing, Brunei, 41
-76, Lowis, Switzerland, 63
-77, Schnapp, Oman, 61
-78, Dianemarie, Japan, 39
-79, Farrell, Iraq, 23
-80, Matthaus, Moldova, 28
-81, Gazzo, Albania, 60
-82, Murrah, Germany, 55
-83, Oconnor, Cambodia, 46
-84, Annelise, France, 26
-85, Barna, Romania, 32
-86, Eupheemia, Bulgaria, 57
-87, Kalagher, Myanmar, 52
-88, Latini, France, 27
-89, Rydder, Philippines, 39
-90, Livia, New Zealand, 49
-91, Addie, Philippines, 60
-92, Aggri, Turkey, 46
-93, Glynis, Kazakhstan, 58
-94, Haff, Russia, 54
-95, Claiborne, Slovenia, 23
-96, Handy, Cambodia, 28
-97, Zelikow, Turkey, 19
-98, Ruscio, Hungary, 29
-99, Aline, Austria, 45
+id, name, country, age, salaire
+0, Stephenie, Kuwait, 60, 7733.087032025263
+1, Elysha, Oman, 63, 6183.928706766538
+2, Corvese, Qatar, 65, 4673.321363312196
+3, Shantha, Switzerland, 24, 4882.363259160047
+4, Kreis, Moldova, 61, 5695.886562932249
+5, Cerell, North Korea, 43, 6969.487033773734
+6, Sheaff, Yemen, 27, 1404.128721750811
+7, Panta, Macedonia, 46, 4920.815110081066
+8, Ivan, Italy, 59, 7380.594187995717
+9, Anthea, Malaysia, 30, 1293.7244877696066
