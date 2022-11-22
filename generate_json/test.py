@@ -1,5 +1,5 @@
 import json
-from random import *
+from random import choice, randint, uniform
 from function import generate_list_from_txt
 
 # ------------------- les list -------------------
@@ -18,7 +18,7 @@ def generate_json():
             'name': choice(list(name)),
             'country': choice(list(country_names)),
             'age': randint(18, 65),
-            'salary': random() * 1000
+            # 'salary': uniform(0.5, 4.1) * 1000
         })
     # save data to json file
     with open('generate_json/data.json', 'w') as f:
@@ -32,17 +32,25 @@ def pretty_json(file):
         with open(file, 'w') as f:
             json.dump(data, f, indent=4)
 
-
-
-
+# create a function that delete [ and ] and , and all in one line in json file and save it to a new file
+def delete_json(file):
+    with open(file, 'r') as f:
+        data = f.read()
+        data = data.replace('[', '')
+        data = data.replace(']', '')
+        data = data.replace('}, {', '}{')
+        with open(file, 'w') as f:
+            f.write(data)
 
 # ------------------- main -------------------
 generate_json()
-pretty_json('generate_json/data.json')
+delete_json('generate_json/data.json')
+
 
 # ------------------- test -------------------
 # affiche les prenoms dans le fichier json
-with open('generate_json/data.json', 'r') as f:
-    data = json.load(f)
-    for i in data:
-        print(i['name'])
+def print_name():
+    with open('generate_json/data.json', 'r') as f:
+        data = json.load(f)
+        for i in data:
+            print(i['name'])
