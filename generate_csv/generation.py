@@ -11,11 +11,11 @@ country_names = [ 'France', 'Germany', 'Italy', 'Spain', 'Portugal', 'Belgium', 
 # creation a fucntion that generate and save data to a csv file, id, random choice in list names, country_names and a random age beetwen 18 and 65
 def generate_csv():
     # open file
-    with open('generation_csv_data.csv', 'w') as f:
+    with open('generate_csv/generation_csv_data.csv', 'w') as f:
         # write header to file
         f.write('id, name, country, age')
         # loop for each line in data list in a new line
-        for i in range(100):
+        for i in range(10):
             f.write('\n')
             # write id, random choice in list names, country_names and a random age beetwen 18 and 65
             f.write(f'{i}, {choice(name)}, {choice(country_names)}, {randint(18, 65)}')
