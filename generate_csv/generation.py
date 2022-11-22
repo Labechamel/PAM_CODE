@@ -1,4 +1,5 @@
 from random import choice, randint
+import time
 
 # ------------------- les list -------------------
 type_agv = ['Avant', 'Arriere']
@@ -17,5 +18,8 @@ def generate_csv():
             f.write('\n')
             # write id, random choice in type_agv, random disatnece, random temps, random choice etat_agv, random nbs_pieces
             f.write(f'{i+1}, {choice(type_agv)}, {randint(0,100)}, {randint(1,120)}, {choice(etat_agv)}, {randint(1,10)}')
-        
+            time.sleep(3)
+            # print data in console
+            print(f'{i+1}, {choice(type_agv)}, {randint(0,100)}, {randint(1,120)}, {choice(etat_agv)}, {randint(1,10)}')
+
 generate_csv()
