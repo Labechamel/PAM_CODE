@@ -1,11 +1,11 @@
 id, type_agv, distance, temps, etat_agv, nbs_pieces
-1, Arriere, 62, 73, libre, 8
-2, Avant, 11, 2, En marche, 5
-3, Arriere, 51, 28, En marche, 10
-4, Arriere, 97, 103, libre, 8
-5, Arriere, 44, 50, En marche, 9
-6, Arriere, 8, 39, libre, 8
-7, Avant, 34, 89, libre, 8
-8, Arriere, 96, 120, En marche, 5
-9, Avant, 66, 58, En marche, 2
-10, Avant, 65, 99, libre, 9
+1, Arriere, 46, 67, libre, 8
+2, Arriere, 76, 65, En marche, 9
+3, Avant, 42, 61, En marche, 9
+4, Arriere, 14, 68, libre, 7
+5, Avant, 56, 80, En marche, 6
+6, Arriere, 1, 89, libre, 1
+7, Avant, 52, 60, libre, 3
+8, Arriere, 65, 86, libre, 9
+9, Avant, 62, 35, libre, 3
+10, Arriere, 36, 99, En marche, 6

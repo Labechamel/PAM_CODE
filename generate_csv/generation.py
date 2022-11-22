@@ -1,11 +1,6 @@
-from random import choice, randint, uniform
-from function import generate_list_from_txt
+from random import choice, randint
 
 # ------------------- les list -------------------
-name = generate_list_from_txt()
-# create a list with 30 countries 
-country_names = [ 'France', 'Germany', 'Italy', 'Spain', 'Portugal', 'Belgium', 'Netherlands', 'Luxembourg', 'Switzerland', 'Austria', 'Poland', 'Czech Republic', 'Slovakia', 'Hungary', 'Romania', 'Bulgaria', 'Greece', 'Turkey', 'Bosnia and Herzegovina', 'Serbia', 'Montenegro', 'Macedonia', 'Albania', 'Croatia', 'Slovenia', 'Moldova', 'Ukraine', 'Belarus', 'Russia', 'Kazakhstan', 'China', 'Japan', 'South Korea', 'North Korea', 'Vietnam', 'Thailand', 'Laos', 'Cambodia', 'Myanmar', 'Malaysia', 'Indonesia', 'Philippines', 'Singapore', 'Brunei', 'Australia', 'New Zealand', 'India', 'Pakistan', 'Afghanistan', 'Iran', 'Iraq', 'Saudi Arabia', 'Yemen', 'Oman', 'United Arab Emirates', 'Qatar', 'Bahrain', 'Kuwait']
-
 type_agv = ['Avant', 'Arriere']
 etat_agv = ['En marche', 'libre']
 
