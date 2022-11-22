@@ -1,7 +1,0 @@
-mysqlsh -u root -p
-root
-n
-
-util.importJson("C:/Users/bechu/OneDrive/1 - ECAM/04 - ECAM 5/07 - PAM/2022/PAM_CODE/generate_json/data.json", {schema: "pam", table: "data"});
- now the probleme
- https://search.brave.com/search?q=Util.importJson%3A+Unknown+column+%27doc%27+in+%27field+list%27+(MYSQLSH+1054)&source=desktop

@@ -1,11 +1,11 @@
-id, name, country, age, salaire
-0, Stephenie, Kuwait, 60, 7733.087032025263
-1, Elysha, Oman, 63, 6183.928706766538
-2, Corvese, Qatar, 65, 4673.321363312196
-3, Shantha, Switzerland, 24, 4882.363259160047
-4, Kreis, Moldova, 61, 5695.886562932249
-5, Cerell, North Korea, 43, 6969.487033773734
-6, Sheaff, Yemen, 27, 1404.128721750811
-7, Panta, Macedonia, 46, 4920.815110081066
-8, Ivan, Italy, 59, 7380.594187995717
-9, Anthea, Malaysia, 30, 1293.7244877696066
+id, type_agv, distance, temps, etat_agv, nbs_pieces
+1, Arriere, 62, 73, libre, 8
+2, Avant, 11, 2, En marche, 5
+3, Arriere, 51, 28, En marche, 10
+4, Arriere, 97, 103, libre, 8
+5, Arriere, 44, 50, En marche, 9
+6, Arriere, 8, 39, libre, 8
+7, Avant, 34, 89, libre, 8
+8, Arriere, 96, 120, En marche, 5
+9, Avant, 66, 58, En marche, 2
+10, Avant, 65, 99, libre, 9
