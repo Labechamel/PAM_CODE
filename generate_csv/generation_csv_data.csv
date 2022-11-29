@@ -1,101 +1,11 @@
-id, name, country, age
-0, Manvel, France, 46
-1, Georgiana, Thailand, 63
-2, Dumanian, Albania, 25
-3, Erdda, Kuwait, 62
-4, Murage, Albania, 60
-5, Algar, Cambodia, 45
-6, Posehn, Hungary, 28
-7, Riva, Oman, 48
-8, Brocklin, Philippines, 23
-9, Royal, Austria, 62
-10, Maples, Pakistan, 50
-11, Levitan, Luxembourg, 31
-12, Ez, Bulgaria, 35
-13, Sherwood, Luxembourg, 33
-14, Celinka, Oman, 26
-15, Oleg, Belgium, 64
-16, Leclair, Luxembourg, 36
-17, Sabra, United Arab Emirates, 51
-18, Cyrano, Slovakia, 49
-19, Jamie, Oman, 44
-20, Kiehl, Afghanistan, 31
-21, Pollock, Austria, 39
-22, Pisarik, Macedonia, 55
-23, Rosamond, India, 58
-24, Bellew, Bosnia and Herzegovina, 19
-25, Kynthia, North Korea, 24
-26, Hirsch, Bahrain, 60
-27, Wade, Serbia, 38
-28, Rochus, Iran, 48
-29, Hidie, South Korea, 57
-30, Senior, Qatar, 20
-31, Kieran, Iran, 30
-32, Ardenia, Netherlands, 31
-33, Karry, Qatar, 58
-34, Mollee, Austria, 54
-35, Senskell, France, 47
-36, Morna, Slovakia, 23
-37, Joanie, Australia, 21
-38, Stanzel, Afghanistan, 55
-39, Hardner, Slovakia, 35
-40, Mitman, Iraq, 43
-41, Samal, Thailand, 35
-42, Yetah, Italy, 23
-43, Cob, Austria, 29
-44, Tilney, China, 45
-45, Octavia, Bahrain, 34
-46, Alansen, Slovakia, 60
-47, Chirlin, Saudi Arabia, 36
-48, Frieder, Belarus, 61
-49, Heddi, France, 51
-50, Melisande, Afghanistan, 54
-51, Ishmael, Poland, 48
-52, Gyimah, Italy, 37
-53, Nehemiah, Serbia, 53
-54, Druci, Oman, 32
-55, Zuckerman, Thailand, 58
-56, Winfrid, Russia, 51
-57, Hakeem, Myanmar, 62
-58, Colbert, Iraq, 61
-59, Shaeffer, Ukraine, 58
-60, Fonseca, Oman, 19
-61, Slayton, Switzerland, 39
-62, Dorkus, Indonesia, 37
-63, Chrystel, Bulgaria, 56
-64, Igal, Moldova, 34
-65, Harod, Poland, 30
-66, Landbert, United Arab Emirates, 31
-67, Busey, India, 47
-68, Woody, Ukraine, 23
-69, Cynarra, Hungary, 60
-70, Mathilda, North Korea, 51
-71, Edbert, Netherlands, 47
-72, Sewell, Russia, 27
-73, Cosetta, India, 47
-74, Rickard, Ukraine, 41
-75, Chrotoem, Brunei, 32
-76, Hirasuna, Japan, 64
-77, Chanda, Ukraine, 58
-78, Efren, Brunei, 51
-79, Daub, South Korea, 18
-80, Gold, Germany, 35
-81, Elly, Belgium, 52
-82, Mable, Iraq, 51
-83, Siegel, Netherlands, 37
-84, Soluk, Vietnam, 34
-85, Chipman, Poland, 61
-86, Herrera, Luxembourg, 35
-87, Ralston, Vietnam, 58
-88, Johen, Austria, 64
-89, Nochur, Qatar, 20
-90, Ravens, Austria, 55
-91, Ulphia, Romania, 40
-92, Iover, Slovakia, 52
-93, Locke, Bosnia and Herzegovina, 58
-94, Maurie, Vietnam, 60
-95, Deirdra, Spain, 22
-96, Salamone, Albania, 62
-97, Chloris, Malaysia, 20
-98, Chamberlin, Czech Republic, 20
-99, Ode, Afghanistan, 33
+id, type_agv, distance, temps, etat_agv, nbs_pieces
+1, Avant, 71, 46, libre, 3
+2, Avant, 11, 37, libre, 8
+3, Arriere, 67, 12, libre, 9
+4, Arriere, 50, 98, libre, 8
+5, Arriere, 27, 73, libre, 9
+6, Avant, 60, 1, En marche, 1
+7, Avant, 24, 19, libre, 3
+8, Arriere, 32, 21, libre, 3
+9, Avant, 64, 68, En marche, 1
+10, Avant, 78, 115, En marche, 4
