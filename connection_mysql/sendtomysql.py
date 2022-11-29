@@ -7,14 +7,19 @@ mydb = mysql.connector.connect(
     passwd="root",
     database="pam"
 )
-# connect to a web host mysql
-mydb = mysql.connector.connecct()
-
 # create a cursor
 mycursor = mydb.cursor()
 
 
 #----------------------------------------
+# create a function that create a table 'pam' with id INT NOT NULL, type_agv VARCHAR(255) NOT NULL, distance INT NOT NULL,temps INT NOT NULL, etat_agv VARCHAR(255) NOT NULL, nbs_pieces INT NOT NULL, PRIMARY KEY (id) 
+def create_table():
+    # create table
+    mycursor.execute("CREATE TABLE pam (id INT NOT NULL, type_agv VARCHAR(255) NOT NULL, distance INT NOT NULL,temps INT NOT NULL, etat_agv VARCHAR(255) NOT NULL, nbs_pieces INT NOT NULL, PRIMARY KEY (id))")
+    # commit
+    mydb.commit()
+
+
 #create a function that read a csv file and insert data to mysql
 def send_to_mysql():
     # open file
@@ -34,6 +39,16 @@ def send_to_mysql():
             # commit
             mydb.commit()
 
-# call function
-send_to_mysql()
 
+# create a fucntion that drop table 'pam'
+def drop_table():
+    # drop table
+    mycursor.execute("DROP TABLE pam")
+    # commit
+    mydb.commit()
+
+
+# call function
+drop_table()
+create_table()
+send_to_mysql()

@@ -14,12 +14,12 @@ def generate_csv():
         # write header to file
         f.write('id, type_agv, distance, temps, etat_agv, nbs_pieces')
         # loop for each line in data list in a new line
-        for i in range(10):
+        for i in range(100):
             f.write('\n')
             # write id, random choice in type_agv, random disatnece, random temps, random choice etat_agv, random nbs_pieces
             f.write(f'{i+1}, {choice(type_agv)}, {randint(0,100)}, {randint(1,120)}, {choice(etat_agv)}, {randint(1,10)}')
-            time.sleep(3)
+            # time.sleep(3)
             # print data in console
-            print(f'{i+1}, {choice(type_agv)}, {randint(0,100)}, {randint(1,120)}, {choice(etat_agv)}, {randint(1,10)}')
+            # print(f'{i+1}, {choice(type_agv)}, {randint(0,100)}, {randint(1,120)}, {choice(etat_agv)}, {randint(1,10)}')
 
 generate_csv()
