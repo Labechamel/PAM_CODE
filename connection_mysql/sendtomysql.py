@@ -7,6 +7,8 @@ mydb = mysql.connector.connect(
     passwd="root",
     database="pam"
 )
+# connect to a web host mysql
+mydb = mysql.connector.connecct()
 
 # create a cursor
 mycursor = mydb.cursor()
