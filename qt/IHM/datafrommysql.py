@@ -27,7 +27,7 @@ def data_to_dict():
     # call function
     data = read_from_mysql()
     # create a list of name of the column
-    column = ['id', 'type_agv', 'distance', 'temps', 'etat_agv', 'nbs_pieces']
+    column = ['id', 'id_machine', 'type_agv', 'distance', 'temps', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces']
     # create a list of data
     data_list = []
     # loop for each line in data
@@ -43,4 +43,4 @@ def data_to_dict():
     # return data_list
     return data_list
 
-# call function
+# create a fucntion that demande the 

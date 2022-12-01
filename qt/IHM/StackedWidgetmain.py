@@ -49,10 +49,10 @@ class window(QtWidgets.QMainWindow):
         produits_machine_1 = data_to_dict()
     
         self.ui.tableWidget.setRowCount(len(produits_machine_1))
-        self.ui.tableWidget.setColumnCount(len(produits_machine_1[0])-1)
+        self.ui.tableWidget.setColumnCount(len(produits_machine_1[0]))
 
         #init tables
-        self.ui.tableWidget.setHorizontalHeaderLabels(('id','type_agv', 'distance', 'etat_agv', 'nbs_pieces'))
+        self.ui.tableWidget.setHorizontalHeaderLabels(('id', 'id_machine', 'type_agv', 'distance (m)', 'temps (s)', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces'))
         #taille des colonnes
         self.ui.tableWidget.setColumnWidth(0,50)
         self.ui.tableWidget.setColumnWidth(1,150)
@@ -65,10 +65,16 @@ class window(QtWidgets.QMainWindow):
         for i in produits_machine_1 :
                 
             self.ui.tableWidget.setItem(nombre_produit,0,QTableWidgetItem(str(i['id'])))
-            self.ui.tableWidget.setItem(nombre_produit,1,QTableWidgetItem(str(i['type_agv'])))
-            self.ui.tableWidget.setItem(nombre_produit,2,QTableWidgetItem(str(i['distance'])))
-            self.ui.tableWidget.setItem(nombre_produit,3,QTableWidgetItem(str(i['etat_agv'])))
-            self.ui.tableWidget.setItem(nombre_produit,4,QTableWidgetItem(str(i['nbs_pieces'])))
+            self.ui.tableWidget.setItem(nombre_produit,1,QTableWidgetItem(str(i['id_machine'])))
+
+            self.ui.tableWidget.setItem(nombre_produit,2,QTableWidgetItem(str(i['type_agv'])))
+            self.ui.tableWidget.setItem(nombre_produit,3,QTableWidgetItem(str(i['distance'])))
+            self.ui.tableWidget.setItem(nombre_produit,4,QTableWidgetItem(str(i['temps'])))
+            self.ui.tableWidget.setItem(nombre_produit,5,QTableWidgetItem(str(i['etat_machine_1'])))
+            self.ui.tableWidget.setItem(nombre_produit,6,QTableWidgetItem(str(i['etat_machine_2'])))
+            self.ui.tableWidget.setItem(nombre_produit,7,QTableWidgetItem(str(i['etat_machine_3'])))
+            self.ui.tableWidget.setItem(nombre_produit,8,QTableWidgetItem(str(i['etat_machine_4'])))
+            self.ui.tableWidget.setItem(nombre_produit,9,QTableWidgetItem(str(i['nbs_pieces'])))
             nombre_produit += 1
 
 #Tableau machine 2
@@ -77,9 +83,9 @@ class window(QtWidgets.QMainWindow):
         produits_machine_2 = data_to_dict()
         
         self.ui.tableWidget_2.setRowCount(len(produits_machine_2))
-        self.ui.tableWidget_2.setColumnCount(4)
+        self.ui.tableWidget_2.setColumnCount(len(produits_machine_2[0]))
         #init tables
-        self.ui.tableWidget_2.setHorizontalHeaderLabels(('id','type_agv', 'distance', 'etat_agv', 'nbs_pieces'))
+        self.ui.tableWidget_2.setHorizontalHeaderLabels(('id', 'id_machine', 'type_agv', 'distance (m)', 'temps (s)', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces'))
         #taille des colonnes
         self.ui.tableWidget_2.setColumnWidth(0,50)
         self.ui.tableWidget_2.setColumnWidth(1,150)
@@ -91,10 +97,15 @@ class window(QtWidgets.QMainWindow):
         for i in produits_machine_2 :
 
             self.ui.tableWidget_2.setItem(nombre_produit,0,QTableWidgetItem(str(i['id'])))
-            self.ui.tableWidget_2.setItem(nombre_produit,1,QTableWidgetItem(str(i['type_agv'])))
-            self.ui.tableWidget_2.setItem(nombre_produit,2,QTableWidgetItem(str(i['distance'])))
-            self.ui.tableWidget_2.setItem(nombre_produit,3,QTableWidgetItem(str(i['etat_agv'])))
-            self.ui.tableWidget_2.setItem(nombre_produit,4,QTableWidgetItem(str(i['nbs_pieces'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,1,QTableWidgetItem(str(i['id_machine'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,2,QTableWidgetItem(str(i['type_agv'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,3,QTableWidgetItem(str(i['distance'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,4,QTableWidgetItem(str(i['temps'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,5,QTableWidgetItem(str(i['etat_machine_1'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,6,QTableWidgetItem(str(i['etat_machine_2'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,7,QTableWidgetItem(str(i['etat_machine_3'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,8,QTableWidgetItem(str(i['etat_machine_4'])))
+            self.ui.tableWidget_2.setItem(nombre_produit,9,QTableWidgetItem(str(i['nbs_pieces'])))
 
             nombre_produit += 1 
 
