@@ -89,18 +89,23 @@ class Ui_MainWindow(object):
         self.Machine1_2 = QtWidgets.QPushButton(self.centralwidget)
         self.Machine1_2.setGeometry(QtCore.QRect(60, 500, 75, 23))
         self.Machine1_2.setObjectName("Machine1_2")
-        self.Machine2_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.Machine2_2.setGeometry(QtCore.QRect(240, 500, 75, 23))
-        self.Machine2_2.setObjectName("Machine2_2")
+
         self.Machine3_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.Machine3_2.setGeometry(QtCore.QRect(420, 500, 75, 23))
+        self.Machine3_2.setGeometry(QtCore.QRect(240, 500, 75, 23))
         self.Machine3_2.setObjectName("Machine3_2")
-        self.Close = QtWidgets.QPushButton(self.centralwidget)
-        self.Close.setGeometry(QtCore.QRect(690, 530, 75, 23))
-        self.Close.setObjectName("Close")
+
+        self.Machine2_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.Machine2_2.setGeometry(QtCore.QRect(420, 500, 75, 23))
+        self.Machine2_2.setObjectName("Machine2_2")
+
         self.Machine3_3 = QtWidgets.QPushButton(self.centralwidget)
         self.Machine3_3.setGeometry(QtCore.QRect(600, 500, 75, 23))
         self.Machine3_3.setObjectName("Machine3_3")
+
+        self.Close = QtWidgets.QPushButton(self.centralwidget)
+        self.Close.setGeometry(QtCore.QRect(690, 530, 75, 23))
+        self.Close.setObjectName("Close")
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 21))
@@ -122,8 +127,8 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "Machine 3"))
         self.label_6.setText(_translate("MainWindow", "Machine 4"))
         self.Machine1_2.setText(_translate("MainWindow", "Machine 1"))
-        self.Machine2_2.setText(_translate("MainWindow", "Machine 2"))
-        self.Machine3_2.setText(_translate("MainWindow", "Machine 3"))
+        self.Machine2_2.setText(_translate("MainWindow", "Machine 3"))
+        self.Machine3_2.setText(_translate("MainWindow", "Machine 2"))
         self.Close.setText(_translate("MainWindow", "Close"))
         self.Machine3_3.setText(_translate("MainWindow", "Machine 4"))
 
