@@ -107,10 +107,10 @@ class window(QtWidgets.QMainWindow):
             nombre_produit += 1 
 
 
-# def main_ihm():
-#     app = QApplication(sys.argv)
-#     main_win = window()
-#     main_win.show()
-#     sys.exit(app.exec_())
+def main_ihm():
+    app = QApplication(sys.argv)
+    main_win = window()
+    main_win.show()
+    sys.exit(app.exec_())
 
-# main_ihm()
+main_ihm()
