@@ -1,7 +1,9 @@
 from connection_mysql.sendtomysql import *
 from generate_csv.generation import *
-from qt.StackedWidgetmain import *
+from qt.IHMMachines import *
 
+from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QApplication, QTableWidgetItem, QMainWindow
 
 # create a function that ask in the terminal if you want drop the table pam and del the csv file
 #
@@ -49,7 +51,7 @@ def run():
     print('....')
     time.sleep(1)
 
-
+    mainIHM()
 
     print("****************************************************************************************")
 
@@ -61,8 +63,13 @@ def main_nous():
         mycursor.execute("DROP TABLE pam")
         mydb.commit()
         print("table pam droped")
-        os.remove("generate_csv/generate_csv_data.csv")
+        os.remove("generate_csv/generation_csv_data.csv")
         print("file generate_csv_data.csv deleted")
+        print("****************************************************************************************")
+        drop2 = input("Do you want to create a new csv file (y/n)")
+        if drop2 == "y":
+            init_csv()
+            print("new csv file created")
         print("****************************************************************************************")
         print("Now we run the program")
         print("****************************************************************************************")

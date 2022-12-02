@@ -1,13 +1,13 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QTableWidgetItem
 from PyQt5.QtWidgets import QMainWindow
-from ui_IHMMachines import Ui_MainWindow
+from qt.ui_IHMMachines import Ui_MainWindow
 
 import sys
 import time
 
 # import the function data_to_dict from the file datafrommysql.py
-from datafrommysql import data_to_dict
+from qt.datafrommysql import data_to_dict
 
 class window(QtWidgets.QMainWindow):
     def __init__ (self):
@@ -178,7 +178,7 @@ class window(QtWidgets.QMainWindow):
             nombre_produit += 1 
 
 
-if __name__== '__main__':
+def mainIHM():
     app = QApplication(sys.argv)
     main_win = window()
     main_win.show()
