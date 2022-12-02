@@ -1,27 +1,36 @@
 import mysql.connector
 
-# connect to mysql
-mydb = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    passwd="root",
-    database="pam"
-)
-# create a cursor
-mycursor = mydb.cursor()
+# créer une fonction qui se connecte à la base de données
+def connect_to_mysql():
+    # connect to mysql
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        passwd="root",
+        database="pam"
+    )   
+
+    mycursor = mydb.cursor()
+    return mydb, mycursor
+
 
 
 #----------------------------------------
 # create a function that create a table 'pam' with id INT NOT NULL, type_agv VARCHAR(255) NOT NULL, distance INT NOT NULL,temps INT NOT NULL, etat_agv VARCHAR(255) NOT NULL, nbs_pieces INT NOT NULL, PRIMARY KEY (id) 
-def create_table():
-    # create table
-    mycursor.execute("CREATE TABLE pam (id INT NOT NULL AUTO_INCREMENT, id_machine INT NOT NULL, type_agv VARCHAR(255) NOT NULL, distance INT NOT NULL,temps INT NOT NULL, etat_machine_1 VARCHAR(255) NOT NULL, etat_machine_2 VARCHAR(255) NOT NULL, etat_machine_3 VARCHAR(255) NOT NULL, etat_machine_4 VARCHAR(255) NOT NULL, nbs_pieces INT NOT NULL, PRIMARY KEY (id))")
-    # commit
-    mydb.commit()
-
+def create_table(mydb, mycursor):
+    # verifier si la table "pam" existe deja
+    mycursor.execute("SHOW TABLES")
+    tables = mycursor.fetchall()
+    if ('pam',) not in tables:
+        mycursor.execute("CREATE TABLE pam (id INT NOT NULL AUTO_INCREMENT, id_machine INT NOT NULL, type_agv VARCHAR(255) NOT NULL, distance INT NOT NULL,temps INT NOT NULL, etat_machine_1 VARCHAR(255) NOT NULL, etat_machine_2 VARCHAR(255) NOT NULL, etat_machine_3 VARCHAR(255) NOT NULL, etat_machine_4 VARCHAR(255) NOT NULL, nbs_pieces INT NOT NULL, PRIMARY KEY (id))")
+        mydb.commit()  # commit
+        
+        
+   
+#----------------------------------------
 
 #create a function that read a csv file and insert data to mysql
-def send_to_mysql():
+def send_to_mysql(mydb, mycursor):
     # open file
     with open('generate_csv/generation_csv_data.csv', 'r') as f:
         # read data from file
@@ -41,14 +50,8 @@ def send_to_mysql():
 
 
 # create a fucntion that drop table 'pam'
-def drop_table():
+def drop_table(mydb, mycursor):
     # drop table
     mycursor.execute("DROP TABLE pam")
     # commit
     mydb.commit()
-
-
-# call function
-drop_table()
-create_table()
-send_to_mysql()

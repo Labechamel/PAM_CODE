@@ -1,16 +1,13 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QTableWidgetItem, QMainWindow
-from Widget import Ui_MainWindow
+
+from table_ihm import Ui_MainWindow
+
 import sys
 import time
 # import the function data_to_dict from the file datafrommysql.py
 from datafrommysql import data_to_dict
 
-
-
-
-
-# les données importées de la base de données dans l'interface
 class window(QtWidgets.QMainWindow):
     def __init__ (self):
         self.main_win = QMainWindow()
@@ -42,7 +39,7 @@ class window(QtWidgets.QMainWindow):
     def showMachine3(self):
         self.ui.stackedWidget.setCurrentWidget(self.ui.Machine3)
 
-#Tableau machine 1
+    #Tableau machine 1
 
     def tableau_machine_1(self):
 
@@ -77,7 +74,7 @@ class window(QtWidgets.QMainWindow):
             self.ui.tableWidget.setItem(nombre_produit,9,QTableWidgetItem(str(i['nbs_pieces'])))
             nombre_produit += 1
 
-#Tableau machine 2
+    #Tableau machine 2
 
     def tableau_machine_2(self):
         produits_machine_2 = data_to_dict()
@@ -110,8 +107,10 @@ class window(QtWidgets.QMainWindow):
             nombre_produit += 1 
 
 
-if __name__== '__main__':
-    app = QApplication(sys.argv)
-    main_win = window()
-    main_win.show()
-    sys.exit(app.exec_())
+# def main_ihm():
+#     app = QApplication(sys.argv)
+#     main_win = window()
+#     main_win.show()
+#     sys.exit(app.exec_())
+
+# main_ihm()
