@@ -43,4 +43,18 @@ def data_to_dict():
     # return data_list
     return data_list
 
-# call function
+
+# create a function that take 3 columns in argument and delete them from the list of data_to_dict
+def delete_column(list, column1, column2, column3):
+    # call function
+    data = list
+    # loop for each line in data
+    for line in data:
+        # delete the column1
+        del line[column1]
+        # delete the column2
+        del line[column2]
+        # delete the column3
+        del line[column3]
+    # return data
+    return data

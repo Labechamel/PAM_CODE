@@ -30,7 +30,6 @@ def run():
     create_table(mydb, mycursor)
     init_csv()
 
-    #-----------------a decommenter si on utilise pas de threads------------------------------------#
     for i in range(1):
         generate_csv()    
     send_to_mysql(mydb, mycursor)
@@ -78,4 +77,6 @@ def main_nous():
         run()
 
 
+
+# on execute la fonction main
 main_nous()

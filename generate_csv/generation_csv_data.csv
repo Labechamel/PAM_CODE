@@ -1,13 +1,13 @@
 id_machine, type_agv, distance, temps, etat_machine_1, etat_machine_2, etat_machine_3, etat_machine_4, nbs_pieces
-1, Arriere, 16, 100, En marche, Libre, Libre, Libre, 10
-1, Arriere, 22, 103, Libre, En marche, Libre, Libre, 8
-1, Arriere, 19, 90, Libre, Libre, En marche, Libre, 10
-1, Arriere, 22, 103, Libre, Libre, Libre, En marche, 10
-2, Arriere, 16, 98, En marche, Libre, Libre, Libre, 9
-2, Arriere, 22, 93, Libre, En marche, Libre, Libre, 7
-2, Arriere, 19, 107, Libre, Libre, En marche, Libre, 6
-2, Arriere, 22, 106, Libre, Libre, Libre, En marche, 3
-3, Arriere, 16, 119, En marche, Libre, Libre, Libre, 9
-3, Arriere, 22, 105, Libre, En marche, Libre, Libre, 6
-3, Arriere, 19, 117, Libre, Libre, En marche, Libre, 3
-3, Arriere, 22, 120, Libre, Libre, Libre, En marche, 3
+1, Arriere, 16, 94, En marche, Libre, Libre, Libre, 5
+1, Arriere, 22, 107, Libre, En marche, Libre, Libre, 3
+1, Arriere, 19, 102, Libre, Libre, En marche, Libre, 2
+1, Arriere, 22, 98, Libre, Libre, Libre, En marche, 4
+2, Avant, 24, 91, En marche, Libre, Libre, Libre, 3
+2, Avant, 15, 91, Libre, En marche, Libre, Libre, 4
+2, Avant, 18, 100, Libre, Libre, En marche, Libre, 4
+2, Avant, 20, 103, Libre, Libre, Libre, En marche, 9
+3, Avant, 24, 119, En marche, Libre, Libre, Libre, 3
+3, Avant, 15, 115, Libre, En marche, Libre, Libre, 2
+3, Avant, 18, 96, Libre, Libre, En marche, Libre, 8
+3, Avant, 20, 95, Libre, Libre, Libre, En marche, 8
