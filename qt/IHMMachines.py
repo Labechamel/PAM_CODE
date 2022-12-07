@@ -176,4 +176,6 @@ def mainIHM():
     app = QApplication(sys.argv)
     main_win = window()
     main_win.show()
-    sys.exit(app.exec_())
+    # sys.exit(app.exec_())
+    # allow to execute code after the window is closed
+    app.exec_()
