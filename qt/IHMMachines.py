@@ -5,8 +5,9 @@ import sys
 # import the function data_to_dict from the file datafrommysql.py
 from qt.datafrommysql import *
 
+
 class window(QtWidgets.QMainWindow):
-    
+      
         def __init__ (self):
                 super(window,self).__init__()
                 self.ui = Ui_MainWindow()
@@ -50,8 +51,8 @@ class window(QtWidgets.QMainWindow):
                 self.ui.Close_2.clicked.connect(self.showVide)
                 self.ui.Close_3.clicked.connect(self.showVide)
                 self.ui.Close_4.clicked.connect(self.showVide)
-        #affichages
-        
+                        #affichages
+                        
 
 
         def showVide(self):
@@ -72,13 +73,10 @@ class window(QtWidgets.QMainWindow):
 
         # a changer
         def temps(self):
-                #init tableau
-                cycle = [ 
-                        {'s':'5',}, 
-                        {'s':'3',}, 
-                        {'s':'2',},
-                        {'s':'6',}, 
-                        {'s':'6',},]
+        #init tableau
+                cycle = delete_column_keep_one(data_to_dict(),'id', 'id_machine', 'type_agv', 'distance', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces')
+
+                temps_moyen = calcul_average_time(cycle)
                 self.ui.tableWidget_Temps.setRowCount(1)
                 self.ui.tableWidget_Temps.setColumnCount(1)
                 #init tables
@@ -89,20 +87,17 @@ class window(QtWidgets.QMainWindow):
                 #boucle d'ajout
                 nombre_produit= 0
 
-                for cycle in cycle :
-                        self.ui.tableWidget_Temps.setItem(0,nombre_produit,QTableWidgetItem(str(cycle['s'])))
+                for i in cycle :
+                        self.ui.tableWidget_Temps.setItem(0,nombre_produit,QTableWidgetItem(str(temps_moyen)))
                         nombre_produit += 1 
-        
+                        
         # a changer
         def vitesse(self):
                 #init tableau
-                produits = [ 
-                        {'m/s':'5',}, 
-                        {'m/s':'3',}, 
-                        {'m/s':'2',},
-                        {'m/s':'6',}, 
-                        {'m/s':'6',},]
-                self.ui.tableWidget_Vitesse.setRowCount(len(produits))
+                vitesse = delete_column_keep_two(data_to_dict(),'id', 'id_machine', 'type_agv', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces')
+
+                vitesse_moyenne = calcul_average_speed(vitesse)
+                self.ui.tableWidget_Vitesse.setRowCount(1)
                 self.ui.tableWidget_Vitesse.setColumnCount(1)
                 #init tables
                 self.ui.tableWidget_Vitesse.setHorizontalHeaderLabels(('m/s',))
@@ -112,41 +107,37 @@ class window(QtWidgets.QMainWindow):
                 #boucle d'ajout
                 nombre_produit= 0
 
-                for produits in produits :
-                        self.ui.tableWidget_Vitesse.setItem(0,nombre_produit,QTableWidgetItem(str(produits['m/s'])))
+                for i in vitesse :
+                        self.ui.tableWidget_Vitesse.setItem(0,nombre_produit,QTableWidgetItem(str(vitesse_moyenne)))
                         nombre_produit += 1 
-        
+                        
         # a changer
         def pieces(self):
-        #init tableau
-                produits = [ 
-                        {'compteur':'5',}, 
-                        {'compteur':'3',}, 
-                        {'compteur':'2',},
-                        {'compteur':'6',}, 
-                        {'compteur':'6',},]
-                self.ui.tableWidget_Pieces.setRowCount(len(produits))
+                #init tableau
+                pieces = delete_column_keep_two(data_to_dict(),'id', 'id_machine', 'type_agv', 'distance', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4')
+
+                piece_minute = calcul_average_piece_per_minute(pieces)
+                self.ui.tableWidget_Pieces.setRowCount(1)
                 self.ui.tableWidget_Pieces.setColumnCount(1)
                 #init tables
-                self.ui.tableWidget_Pieces.setHorizontalHeaderLabels(('compteur',))
+                self.ui.tableWidget_Pieces.setHorizontalHeaderLabels(('nbs pieces/min',))
                 #taille des colonnes
                 self.ui.tableWidget_Pieces.setColumnWidth(0,150)
 
                 #boucle d'ajout
                 nombre_produit= 0
 
-                for produits in produits :
-                        self.ui.tableWidget_Pieces.setItem(0,nombre_produit,QTableWidgetItem(str(produits['compteur'])))
+                for i in pieces :
+                        self.ui.tableWidget_Pieces.setItem(0,nombre_produit,QTableWidgetItem(str(piece_minute)))
                         nombre_produit += 1 
-                
+        
         def machines(self):
-                #init tableau
-                produits = [ 
-                        {'Machine 1':'libre','Machine 2':'occupée', 'Machine 3':'libre', 'Machine 4':'occupée',},
-                        {'Machine 1':'libre','Machine 2':'occupée', 'Machine 3':'occupée', 'Machine 4':'occupée',}]
+        #init tableau
+                produits = delete_column_all_machine(data_to_dict(),'id_machine', 'type_agv', 'distance', 'temps', 'nbs_pieces')
+
                 
                 self.ui.tableWidget_Etat.setRowCount(len(produits))
-                self.ui.tableWidget_Etat.setColumnCount(4)
+                self.ui.tableWidget_Etat.setColumnCount(len(produits[0]))
                 #init tables
                 self.ui.tableWidget_Etat.setHorizontalHeaderLabels(('Machine 1','Machine 2','Machine 3','Machine 4'))
                 
@@ -159,16 +150,16 @@ class window(QtWidgets.QMainWindow):
                 #boucle d'ajout
                 nombre_produit= 0
 
-                for produits in produits :
-                        self.ui.tableWidget_Etat.setItem(nombre_produit,0,QTableWidgetItem(str(produits['Machine 1'])))
-                        self.ui.tableWidget_Etat.setItem(nombre_produit,1,QTableWidgetItem(str(produits['Machine 2'])))
-                        self.ui.tableWidget_Etat.setItem(nombre_produit,2,QTableWidgetItem(str(produits['Machine 3'])))
-                        self.ui.tableWidget_Etat.setItem(nombre_produit,3,QTableWidgetItem(str(produits['Machine 4'])))
+                for i in produits :
+                        self.ui.tableWidget_Etat.setItem(nombre_produit,0,QTableWidgetItem(str(i['etat_machine_1'])))
+                        self.ui.tableWidget_Etat.setItem(nombre_produit,1,QTableWidgetItem(str(i['etat_machine_2'])))
+                        self.ui.tableWidget_Etat.setItem(nombre_produit,2,QTableWidgetItem(str(i['etat_machine_3'])))
+                        self.ui.tableWidget_Etat.setItem(nombre_produit,3,QTableWidgetItem(str(i['etat_machine_4'])))
                         nombre_produit += 1 
 
 
         def nomTech(self):
-                #init tableau
+        #init tableau
                 produits = [ 
                         {'Machine 1':'Abel','Machine 2':'Pierre', 'Machine 3':'Marie', 'Machine 4':'Victor',},
                         {'Machine 1':'Abel','Machine 2':'Pierre', 'Machine 3':'Marie', 'Machine 4':'Paul',},]
@@ -187,21 +178,21 @@ class window(QtWidgets.QMainWindow):
                 #boucle d'ajout
                 nombre_produit= 0
 
-                for produits in produits :
-                        self.ui.tableWidget_Technicien.setItem(nombre_produit,0,QTableWidgetItem(str(produits['Machine 1'])))
-                        self.ui.tableWidget_Technicien.setItem(nombre_produit,1,QTableWidgetItem(str(produits['Machine 2'])))
-                        self.ui.tableWidget_Technicien.setItem(nombre_produit,2,QTableWidgetItem(str(produits['Machine 3'])))
-                        self.ui.tableWidget_Technicien.setItem(nombre_produit,3,QTableWidgetItem(str(produits['Machine 4'])))
+                for i in produits :
+                        self.ui.tableWidget_Technicien.setItem(nombre_produit,0,QTableWidgetItem(str(i['Machine 1'])))
+                        self.ui.tableWidget_Technicien.setItem(nombre_produit,1,QTableWidgetItem(str(i['Machine 2'])))
+                        self.ui.tableWidget_Technicien.setItem(nombre_produit,2,QTableWidgetItem(str(i['Machine 3'])))
+                        self.ui.tableWidget_Technicien.setItem(nombre_produit,3,QTableWidgetItem(str(i['Machine 4'])))
                         nombre_produit += 1 
-###-----------------------------------------------------------------------------------------------------------------------------------------------------------###
-                                                ##Details##
+        ###-----------------------------------------------------------------------------------------------------------------------------------------------------------###
+                ##Details##
 
-                #Tableau1
+        #Tableau1
 
         def machine1(self):
-                produits_machine_1 =delete_column(data_to_dict(),'etat_machine_2', 'etat_machine_3', 'etat_machine_4')
+                produits_machine_1 =delete_column_machine(data_to_dict(),'etat_machine_2', 'etat_machine_3', 'etat_machine_4')
 
-    
+                
                 self.ui.tableWidget_Machine1.setRowCount(len(produits_machine_1))
                 self.ui.tableWidget_Machine1.setColumnCount(len(produits_machine_1[0]))
 
@@ -229,11 +220,11 @@ class window(QtWidgets.QMainWindow):
                         nombre_produit += 1
 
 
-        #machine2
+                #machine2
 
         def machine2(self):
-                produits_machine_2 =delete_column(data_to_dict(),'etat_machine_1', 'etat_machine_3', 'etat_machine_4')
-        
+                produits_machine_2 =delete_column_machine(data_to_dict(),'etat_machine_1', 'etat_machine_3', 'etat_machine_4')
+                        
                 self.ui.tableWidget_Machine2.setRowCount(len(produits_machine_2))
                 self.ui.tableWidget_Machine2.setColumnCount(len(produits_machine_2[0]))
                 #init tables
@@ -259,12 +250,12 @@ class window(QtWidgets.QMainWindow):
                         nombre_produit += 1 
 
 
-        #machine3
+                #machine3
 
         def machine3(self):
-                produits_machine_3 =delete_column(data_to_dict(),'etat_machine_1', 'etat_machine_2', 'etat_machine_4')
+                produits_machine_3 =delete_column_machine(data_to_dict(),'etat_machine_1', 'etat_machine_2', 'etat_machine_4')
 
-        
+                        
                 self.ui.tableWidget_Machine3.setRowCount(len(produits_machine_3))
                 self.ui.tableWidget_Machine3.setColumnCount(len(produits_machine_3[0]))
                 #init tables
@@ -289,12 +280,12 @@ class window(QtWidgets.QMainWindow):
 
                         nombre_produit += 1 
 
-        #machine4
+                #machine4
 
         def machine4(self):
-                produits_machine_4 =delete_column(data_to_dict(),'etat_machine_1', 'etat_machine_2', 'etat_machine_3')
+                produits_machine_4 =delete_column_machine(data_to_dict(),'etat_machine_1', 'etat_machine_2', 'etat_machine_3')
 
-        
+                        
                 self.ui.tableWidget_Machine4.setRowCount(len(produits_machine_4))
                 self.ui.tableWidget_Machine4.setColumnCount(len(produits_machine_4[0]))
                 #init tables
@@ -317,10 +308,10 @@ class window(QtWidgets.QMainWindow):
                         self.ui.tableWidget_Machine4.setItem(nombre_produit,5,QTableWidgetItem(str(i['etat_machine_4'])))
                         self.ui.tableWidget_Machine4.setItem(nombre_produit,6,QTableWidgetItem(str(i['nbs_pieces'])))
 
-                nombre_produit += 1 
+                        nombre_produit += 1 
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------##
-                                                ##lecture##
+            ##lecture##
 
 
 def mainIHM():
@@ -328,5 +319,3 @@ def mainIHM():
         win = window()
         win.show()
         sys.exit(app.exec_())
-
-mainIHM() 

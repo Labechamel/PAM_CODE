@@ -75,7 +75,4 @@ def main_nous():
     else:
         run()
 
-
-
-# on execute la fonction main
 main_nous()
