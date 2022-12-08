@@ -1,13 +1,13 @@
 
 # ExelCar PAM ECAM Rennes 2022
 
-Il s'agit d'un projet réalisé dans le cadre de notre dernière année d'école d'ingénieur. Ce projet n'est pas la version finale. En effet, nos filleuls reprendront ce projet pour ajouter de nouvelles fonctionnalité et technologie (exemple : ajout de la base de données dans le cloud, installation du projet via un conteneur dockers, automatisation de l’installation de mysql et python, …)
+Il s'agit d'un projet réalisé dans le cadre de notre dernière année d'école d'ingénieur. Ce projet n'est pas la version finale mais une première version initiale qui sera ensuite reprise par de prochains groupes d'élèves qui amélioreront cette version et implémenteront de nouvelles choses. Par exemple, nous avons pensé à l'hébergement de la base de données dans le cloud, le déploiement du projet du projet via un conteneur docker ou encore l'automatisation de l’installation de mysql et python par un fichier exécutable, etc…)
 
 
 ## Explication du projet
-Ainsi, ce projet a pour but de reproduire une chaine de production de fabrication de portière avant et arrière. Les étudiants de dernières années en génie industriel seront amenés a utilisé cette IHM pour leur permettre de proposer des améliorations aux chaines de production du site de PSA Peugeot de Rennes.
+Ce projet a pour but de reproduire une chaine de montage de portière avant et arrière de voitures. Les étudiants de dernières années du module génie industriel seront amenés a utilisé cette IHM afin de simuler le montage de ces portières comme s'ils étaient sur la ligne de production et ainsi de proposer des améliorations pouvant être mises en place sur le site PSA Peugeot de Rennes.
 
-En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle parcourt, son nombre de pièce sur chaque poste ainsi que les techniciens travaillant sur la portière sont ici étudier. 
+En fait, chaque portière passe par 4 machines et nous affichons les données suivantes sur l'IHM réalisé : leurs vitesses, la distance qu’elles parcourent, le nombre de pièce sur chaque poste ainsi que les techniciens qui y travaillent. 
 
 
 
@@ -30,7 +30,7 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
   Suivez les deux tutoriels pour installer Mysql ainsi que Python 
 ```
 
-3 - Une fois MySQL installé et python installé, nous allons installer les librairies python nécessaires pour le programme
+3 - Une fois MySQL installé et python installé, nous allons installer les librairies python nécessaires pour exécuter le programme
 
 ```bash
   Ouvrez l invité de commande depuis le dossier du projet et executez la commande ci-dessous :
@@ -38,7 +38,7 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
   pip install -r requirements.txt
 ```
 
-4 - Enfin executez le programme
+4 - Enfin, executez le programme
 
 ```bash
   Ouvrez l invité de commande depuis le dossier du projet et executez la commande ci-dessous :
@@ -64,9 +64,9 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
 
 ## Améliorations envisageables
 
-- Ajout de la base de données dans le cloud
-- Automatisation de l’installation de mysql et python
-- Installation du projet via un conteneur dockers
+- Hébergement de la base de données dans le cloud (AWS par exemple)
+- Automatisation de l’installation de mysql et python (par un fichier exécutable)
+- Déploiement du projet via un conteneur docker
 
 
 
