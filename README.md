@@ -57,9 +57,13 @@ En fait, chaque portière passe par 4 machines et nous affichons les données su
 
 **Langage:** Python
 
-**Server:** MySQL
+**BDD:** MySQL
 
 **IHM:** Qtdesigner
+
+## Methodologies 
+
+** Agile scrum 
 
 
 ## Améliorations envisageables
