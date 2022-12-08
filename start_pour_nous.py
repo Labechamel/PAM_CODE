@@ -26,7 +26,6 @@ def run():
     print('....')
     time.sleep(1)
 
-    print(mydb, mycursor)
     create_table(mydb, mycursor)
     init_csv()
 
@@ -52,7 +51,7 @@ def run():
 
     mainIHM()
 
-    print("****************************************************************************************")
+
 
 
 def main_nous():
@@ -72,11 +71,8 @@ def main_nous():
         print("****************************************************************************************")
         print("Now we run the program")
         print("****************************************************************************************")
-        run()
+        run()        
     else:
         run()
 
-
-
-# on execute la fonction main
 main_nous()
