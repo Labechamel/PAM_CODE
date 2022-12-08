@@ -63,7 +63,9 @@ En fait, chaque portière passe par 4 machines et nous affichons les données su
 
 ## Methodologies 
 
-** Agile scrum 
+Pseudo-agile 
+
+Sprint de 2 à 3 semaines
 
 
 ## Améliorations envisageables
