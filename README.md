@@ -33,7 +33,7 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
 3 - Une fois MySQL installé et python installé, nous allons installer les librairies python nécessaires pour le programme
 
 ```bash
-  Ouvrez l'invité de commande depuis le dossier du projet et executez la commande ci-dessous :
+  Ouvrez l invité de commande depuis le dossier du projet et executez la commande ci-dessous :
 
   pip install -r requirements.txt
 ```
@@ -41,7 +41,7 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
 4 - Enfin executez le programme
 
 ```bash
-  Ouvrez l'invité de commande depuis le dossier du projet et executez la commande ci-dessous :
+  Ouvrez l invité de commande depuis le dossier du projet et executez la commande ci-dessous :
 
   python Start.py
 ```
