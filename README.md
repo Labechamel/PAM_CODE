@@ -23,7 +23,7 @@ En effet, chaque portière passe par 4 machines et nous affichons les données s
   git clone https://github.com/Labechamel/PAM_CODE
 ```
 
-2 - Allez dans le dossier tuto_installation [ou cliquez ici](https://linktodocumentation)
+2 - Allez dans le dossier tuto_installation [ou cliquez ici](https://github.com/Labechamel/PAM_CODE/tree/master/Tutoriel)
 
 ```bash
   Suivez les deux tutoriels pour installer Mysql ainsi que Python 
