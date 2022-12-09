@@ -48,9 +48,12 @@ En effet, chaque porte passe par 4 machines, sa vitesse, la distance qu’elle p
 
 ## Documentation
 
-- [Tuto installation MySQL]()
+Suivez les deux tutoriels pour installer Mysql ainsi que Python depuis le dossier téléchargé ou depuis le lien ci-dessous
 
-- [Tuto installation Python](https://linktodocumentation)
+- [Tuto installation MySQL](https://github.com/Labechamel/PAM_CODE/blob/master/Tutoriel/Guide%20d'installation%20MySQL%20Windows%20Version%20Finale.pdf)
+N'oubliez pas de cliquer sur "more pages" en bas de la page pour voir la suite du tuto
+
+- [Tuto installation Python](https://github.com/Labechamel/PAM_CODE/blob/master/Tutoriel/Guide%20d'installation%20python%203.11.pdf)
 
 ## Télécharger les installer
 
