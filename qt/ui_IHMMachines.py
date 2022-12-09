@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'c:\Users\Nathan\Documents\ECAM5\PAM\IHM_V3\IHM.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #

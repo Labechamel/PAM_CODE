@@ -12,7 +12,6 @@ mydb = mysql.connector.connect(
 # create a cursor
 mycursor = mydb.cursor()
 
-
 # create a fucntion that read data from mysql from the table 'pam' and return a list of data
 def read_from_mysql():
     # read data from mysql
@@ -42,7 +41,6 @@ def data_to_dict():
         data_list.append(data_dict)
     # return data_list
     return data_list
-
 
 
 # create a function that take 3 columns in argument and delete them from the list of data_to_dict
@@ -101,7 +99,6 @@ def delete_column_keep_two(list, column1, column2, column3, column4, column5, co
         del line[column8]
     # return data
     return data
-
 
 def delete_column_keep_one(list, column1, column2, column3, column4, column5, column6, column7, column8, column9):
     # call function

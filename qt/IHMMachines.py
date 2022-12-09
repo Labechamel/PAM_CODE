@@ -311,9 +311,7 @@ class window(QtWidgets.QMainWindow):
                         nombre_produit += 1 
 
 ##-------------------------------------------------------------------------------------------------------------------------------------------------------------------##
-            ##lecture##
-
-
+##lecture##
 def mainIHM():
         app = QtWidgets.QApplication(sys.argv)
         win = window()

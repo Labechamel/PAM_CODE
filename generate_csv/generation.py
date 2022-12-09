@@ -49,17 +49,6 @@ def generate_csv():
             f.write(f'{i+1}, {agv_type}, {distance3}, {randint(90,120)}, {etat_agv[b]}, {etat_agv[b]}, {etat_agv[a]}, {etat_agv[b]}, {nombre_de_piece3}')
             f.write('\n')
             f.write(f'{i+1}, {agv_type}, {distance4}, {randint(90,120)}, {etat_agv[b]}, {etat_agv[b]}, {etat_agv[b]}, {etat_agv[a]}, {nombre_de_piece4}')
-
-
-    # y = 0
-    # while True:
-    #     if y == 0:
-    #         with open('generate_csv/generation_csv_data.csv', 'w') as f:
-    #             # write header to file
-    #             f.write('type_agv, distance, temps, etat_agv, nbs_pieces')
-    #             y = y + 1
-    #     else:
-    
  
 
 #------------- a lancer au tout début ---------------------------#
@@ -68,18 +57,6 @@ def init_csv():
         # write header to file
         f.write('id_machine, type_agv, distance, temps, etat_machine_1, etat_machine_2, etat_machine_3, etat_machine_4, nbs_pieces')
         
-#------------------------------------------------
-
-# ------------------- pour pouvoir stopper la fonction de génération depuis l'IHM -------------------
-
-#global lancement
-#lancement = False
-
-
-# while True:  #lancement == True
-#     generate_csv()
-#     #send_to_mysql()
-#     time.sleep(5)   
 
 # ------------------- fin -------------------
 def main_generation_csv():

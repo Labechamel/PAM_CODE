@@ -6,7 +6,7 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QTableWidgetItem, QMainWindow
 
 # create a function that ask in the terminal if you want drop the table pam and del the csv file
-#
+
 def run():
     print("****************************************************************************************")
     print ("start")

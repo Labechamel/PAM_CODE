@@ -26,7 +26,6 @@ def create_table(mydb, mycursor):
         mydb.commit()  # commit
         
         
-   
 #----------------------------------------
 
 #create a function that read a csv file and insert data to mysql
