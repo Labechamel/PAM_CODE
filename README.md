@@ -29,13 +29,18 @@ En effet, chaque portière passe par 4 machines et nous affichons les données s
   Suivez les deux tutoriels pour installer Mysql ainsi que Python 
 ```
 
-3 - Une fois MySQL installé et python installé, nous allons installer les librairies python nécessaires pour exécuter le programme
+3 - Une fois MySQL installé et python installé, nous allons installer les librairies python nécessaires pour exécuter le programme ainsi que créer la base de données
 
 ```bash
   Ouvrez l invité de commande depuis le dossier du projet et executez la commande ci-dessous :
 
   pip install -r requirements.txt
 ```
+
+```bash
+  Double cliquez ensuite sur le fichier "create_database.bat" pour créer la base de données
+```
+
 
 4 - Enfin, executez le programme
 
