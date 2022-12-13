@@ -174,3 +174,10 @@ def calcul_average_piece_per_minute(list):
     average_piece_per_minute = sum(piece_per_minute)/len(piece_per_minute)
     # return average_piece_per_minute
     return average_piece_per_minute
+
+# create a function that only show two decimal of a number with the function round
+def two_decimal(number):
+    # call function
+    number = round(number, 3)
+    # return number
+    return number

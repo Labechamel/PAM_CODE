@@ -76,7 +76,7 @@ class window(QtWidgets.QMainWindow):
         #init tableau
                 cycle = delete_column_keep_one(data_to_dict(),'id', 'id_machine', 'type_agv', 'distance', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces')
 
-                temps_moyen = calcul_average_time(cycle)
+                temps_moyen = two_decimal(calcul_average_time(cycle))
                 self.ui.tableWidget_Temps.setRowCount(1)
                 self.ui.tableWidget_Temps.setColumnCount(1)
                 #init tables
@@ -96,7 +96,7 @@ class window(QtWidgets.QMainWindow):
                 #init tableau
                 vitesse = delete_column_keep_two(data_to_dict(),'id', 'id_machine', 'type_agv', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4', 'nbs_pieces')
 
-                vitesse_moyenne = calcul_average_speed(vitesse)
+                vitesse_moyenne = two_decimal(calcul_average_speed(vitesse))
                 self.ui.tableWidget_Vitesse.setRowCount(1)
                 self.ui.tableWidget_Vitesse.setColumnCount(1)
                 #init tables
@@ -116,7 +116,7 @@ class window(QtWidgets.QMainWindow):
                 #init tableau
                 pieces = delete_column_keep_two(data_to_dict(),'id', 'id_machine', 'type_agv', 'distance', 'etat_machine_1', 'etat_machine_2', 'etat_machine_3', 'etat_machine_4')
 
-                piece_minute = calcul_average_piece_per_minute(pieces)
+                piece_minute = two_decimal(calcul_average_piece_per_minute(pieces))
                 self.ui.tableWidget_Pieces.setRowCount(1)
                 self.ui.tableWidget_Pieces.setColumnCount(1)
                 #init tables

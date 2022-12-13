@@ -113,12 +113,17 @@ class Ui_MainWindow(object):
         self.tableWidget_Temps.setObjectName("tableWidget_Temps")
         self.tableWidget_Temps.setColumnCount(0)
         self.tableWidget_Temps.setRowCount(0)
-        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
-        self.checkBox.setGeometry(QtCore.QRect(40, 470, 151, 40))
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.checkBox.setFont(font)
-        self.checkBox.setObjectName("checkBox")
+
+        # checkBox en commentaire a décommenter si on met en place les threads
+
+        # self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        # self.checkBox.setGeometry(QtCore.QRect(40, 470, 151, 40))
+        # font = QtGui.QFont()
+        # font.setPointSize(10)
+        # self.checkBox.setFont(font)
+        # self.checkBox.setObjectName("checkBox")
+
+
         self.stackedWidget_2 = QtWidgets.QStackedWidget(self.centralwidget)
         self.stackedWidget_2.setGeometry(QtCore.QRect(70, 530, 811, 281))
         self.stackedWidget_2.setObjectName("stackedWidget_2")
@@ -289,7 +294,10 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "Nb de pièces"))
         self.label_6.setText(_translate("MainWindow", "Nom technicien"))
         self.pushButton.setText(_translate("MainWindow", "Détails"))
-        self.checkBox.setText(_translate("MainWindow", "Marche / Arret "))
+
+        # checkBox en commentaire a décommenter si on met en place les threads
+        # self.checkBox.setText(_translate("MainWindow", "Marche / Arret "))
+        
         self.label_7.setText(_translate("MainWindow", "Machine 1"))
         self.Machine1_1.setText(_translate("MainWindow", "Machine 1"))
         self.Machine1_2.setText(_translate("MainWindow", "Machine 2"))
