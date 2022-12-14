@@ -39,6 +39,8 @@ En effet, chaque portière passe par 4 machines et nous affichons les données s
 
 ```bash
   Double cliquez ensuite sur le fichier "create_database.bat" pour créer la base de données
+
+  entrez le mot de passe root de mysql "root" et appuyez sur entrée
 ```
 
 
