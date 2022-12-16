@@ -1,5 +1,5 @@
 
-# ExcelCar PAM ECAM Rennes 2022
+# PAM ECAM Rennes 2022
 
 Il s'agit d'un projet réalisé dans le cadre de notre dernière année d'école d'ingénieur. Ce projet n'est pas la version finale mais une première version initiale qui sera ensuite reprise par de prochains groupes d'élèves qui amélioreront cette version et implémenteront de nouvelles choses. Par exemple, nous avons pensé à l'hébergement de la base de données dans le cloud, le déploiement du projet du projet via un conteneur docker ou encore l'automatisation de l’installation de mysql et python par un fichier exécutable, etc…
 
