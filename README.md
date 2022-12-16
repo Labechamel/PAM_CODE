@@ -56,7 +56,7 @@ En effet, chaque portière passe par 4 machines et nous affichons les données s
 
 Suivez les deux tutoriels pour installer Mysql ainsi que Python depuis le dossier téléchargé ou depuis le lien ci-dessous
 
-- [Tuto installation MySQL](https://github.com/Labechamel/PAM_CODE/blob/master/Tutoriel/Guide%20d'installation%20MySQL%20Windows%20Version%20Finale.pdf)
+- [Tuto installation MySQL](https://github.com/Labechamel/PAM_CODE/blob/master/Tutoriel/Guide%20d'installation%20MySQL.pdf)
 N'oubliez pas de cliquer sur "more pages" en bas de la page pour voir la suite du tuto
 
 - [Tuto installation Python](https://github.com/Labechamel/PAM_CODE/blob/master/Tutoriel/Guide%20d'installation%20python%203.11.pdf)
@@ -101,7 +101,7 @@ N'oubliez pas de cliquer sur "more pages" en bas de la page pour voir la suite d
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pierremahieux-sales/)
 - [@KolyaGud](https://github.com/KolyaGud)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kolya-gudenkauf-6807b5195/)
-- Nathan_vds
+- [@Nathan_vds](https://github.com/Nathvds)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nathan-vanderschelden-35ab54173/)
 ## Used By
 
